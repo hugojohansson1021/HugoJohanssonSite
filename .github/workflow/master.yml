@@ -1,9 +1,15 @@
-on: push
+on:
+  push:
+    branches:
+      - master
+
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
@@ -11,6 +17,11 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server:  ftp.app-utvecklare.se
+        server: ftp.app-utvecklare.se
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+
+    - name: Debug information
+      run: |
+        echo "FTP_USERNAME: ${{ secrets.FTP_USERNAME }}"
+        echo "FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}"
