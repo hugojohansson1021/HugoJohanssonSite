@@ -2,4 +2,4 @@
  website
 
 
-![En fin bild](/kontlinApp.jpg)
+![En fin bild](/HugoJohanssonSite.png)
