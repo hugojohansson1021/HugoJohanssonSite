@@ -617,122 +617,123 @@ background-size: 100%;
   }
   
 
-
-
-
-
 /* Styles for message input field */
 #messageInput {
-  width: 90%; /* Full width minus padding */
-  padding: 12px 20px; /* Some padding */
-  margin: 8px 0; /* Some margin to allow space between fields */
-  display: inline-block; /* Allows it to sit next to items on the same line */
-  border: 1px solid #ccc; /* Light grey border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Makes sure the padding doesn't affect the width */
-  font-size: 16px; /* Larger font size for better readability */
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
-
-
-
-
 
 /* Styles for send button */
 #sendMessage {
   font-size: 1.8rem;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #59C173, #a17fe0, #5D26C1 );
-    background: linear-gradient(to right, #59C173, #a17fe0, #5D26C1 );
-    padding: 20px 60px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
 }
 
-#sendMessage::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    
-    transition: all 0.35s;
-    border-radius: 4px;
-}
-#sendMessage:hover{
-    color: #fff;
+#sendMessage::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.35s;
+  border-radius: 4px;
 }
 
-#sendMessage:hover:after{
-    width: 100%;
+#sendMessage:hover {
+  color: #fff;
 }
 
-#sendMessage a{
+#sendMessage:hover:after {
+  width: 100%;
+}
+
+#sendMessage a {
   position: relative;
   z-index: 2;
   color: #fff;
   text-decoration: none;
 }
 
-
-
-
-
 .contact-link {
   display: block;
   text-decoration: none;
   background: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
   color: #fff;
-  padding: 8px 10px; /* Anpassa padding för bättre tryckbarhet på mobila enheter */
+  padding: 8px 10px;
   border-radius: 5px;
-  margin: 1rem; /* Anpassa marginal runt länkarna */
+  margin: 1rem;
   text-align: center;
 }
 
-
 .contact-link:hover {
-  background-color: #0056b3; /* Bakgrundsfärg vid hover (muspekare över länken) */
+  background-color: #0056b3;
 }
 
 .contact-text {
-  margin: 1rem ; /* Ta bort marginalen (till exempel från <p>-elementet) */
+  margin: 1rem;
   text-align: center;
   max-width: 100%;
 }
 
+/* Styles for h1 */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
 
-@media screen and (max-width: 480px) {
-  .contact-text {
-    width: 250px;
-    height: 250px;
+/* Media queries för att anpassa till mobila enheter */
+@media screen and (max-width: 768px) {
+  #messageInput {
+    width: 100%;
   }
 
-  
-
-  .main_content h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
-  }
-  .main_content h2 {
-    font-size: 2rem;
-    justify-content: center;
-  }
-
-  .main_content p {
-    margin-top: 2rem;
-  }
-
-  .main_btn {
-    padding: 12px 36px;
-    margin: 2.5rem 0;
+  #sendMessage {
+    padding: 15px 40px;
   }
 }
 
+@media screen and (max-width: 480px) {
+  #messageInput {
+    width: 100%;
+  }
+
+  #sendMessage {
+    padding: 12px 36px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+
+  .contact-link {
+    padding: 4px 8px; /* Minska padding på länkarna för bättre passform på små skärmar */
+    font-size: 14px; /* Minska textstorleken för länkarna */
+  }
+
+  .contact-text {
+    font-size: 14px; /* Minska textstorleken */
+  }
+
+
+
+}
 
 
 
