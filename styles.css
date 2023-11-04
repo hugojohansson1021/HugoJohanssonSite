@@ -427,7 +427,7 @@ background-size: 100%;
   
     .main_content p {
       margin-top: 1rem;
-      font-size: 1.5´rem;
+      font-size: 1.5rem;
     }
   }
   
@@ -440,22 +440,52 @@ background-size: 100%;
     
   
     .main_content h1 {
-      font-size: 2rem;
+      font-size: 25px;
       margin-top: 3rem;
+      justify-content: center;
     }
     .main_content h2 {
       font-size: 2rem;
       justify-content: center;
     }
   
-    .main_content p {
-      margin-top: 2rem;
-    }
+    
   
     .main_btn {
       padding: 12px 36px;
       margin: 2.5rem 0;
+      justify-content: center;
     }
+    .main_content p {
+      margin: 1rem ;
+      font-size: 15px;
+      justify-content: center;
+    }
+
+
+
+
+    .text {
+      margin: 0.5rem;
+      font-size: 14px;
+      justify-content: center;
+    }
+  
+    /* Anpassning av knappstorlek för mobilvisning */
+    .sendMessage {
+      padding: 12px 36px;
+      margin: 2.5rem 0;
+      justify-content: center;
+    }
+  
+    /* Anpassning av input-fält för mobilvisning */
+    .messageInput {
+      width: 100%;
+      margin: 1rem auto; /* Centrerar elementet horisontellt genom att använda "auto" för vänster och höger marginaler */
+      display: block;
+    }
+    
+
   }
 
   .priser{
@@ -617,11 +647,25 @@ background-size: 100%;
   }
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Styles for message input field */
 #messageInput {
-  width: 90%;
+  width: 70%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 8px 8px 8px ;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -686,7 +730,7 @@ background-size: 100%;
 .contact-text {
   margin: 1rem;
   text-align: center;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 /* Styles for h1 */
@@ -699,7 +743,7 @@ h1 {
 /* Media queries för att anpassa till mobila enheter */
 @media screen and (max-width: 768px) {
   #messageInput {
-    width: 100%;
+    margin: 8px 8px 8px 8px ;
   }
 
   #sendMessage {
@@ -709,7 +753,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
   #messageInput {
-    width: 100%;
+    margin: 8px 8px 8px 8px ;
   }
 
   #sendMessage {
@@ -729,11 +773,21 @@ h1 {
 
   .contact-text {
     font-size: 14px; /* Minska textstorleken */
+    margin: 8px 8px 8px 8px;
+    text-align: center;
   }
 
 
 
 }
+
+
+
+
+
+
+
+
 
 
 
