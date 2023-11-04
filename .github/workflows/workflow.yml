@@ -3,7 +3,7 @@ name: 🚀 Deploy website on push
 on:
   push:
     branches:
-      - main # Byt ut "main" till den branch du vill utlösa workflowen på
+      - main # Byt ut "main"eknöwejh till den branch du vill utlösa workflowen på
 
 jobs:
   web-deploy:
