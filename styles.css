@@ -690,9 +690,10 @@ background-size: 100%;
     background: -webkit-linear-gradient(to right, #59C173, #a17fe0, #5D26C1 );
     background: linear-gradient(to right, #59C173, #a17fe0, #5D26C1 );
   color: #fff; /* Textfärg */
-  padding: 10px 15px; /* Inre utrymme (topp och botten 10px, vänster och höger 15px) */
+  padding: 1px 5px; /* Inre utrymme (topp och botten 10px, vänster och höger 15px) */
   border-radius: 5px; /* Avrunda hörnen */
   margin-bottom: 10px; /* Lägg till mellanrum mellan länkarna */
+  margin: 1rem 1rem 1rem 1rem ;
   text-align: center; /* Centrera texten horisontellt */
 }
 
@@ -701,11 +702,37 @@ background-size: 100%;
 }
 
 .contact-text {
-  margin: 0; /* Ta bort marginalen (till exempel från <p>-elementet) */
+  margin: 1rem 1rem 1rem 1rem ; /* Ta bort marginalen (till exempel från <p>-elementet) */
+  text-align: center;
 }
 
 
+@media screen and (max-width: 480px) {
+  .contact-text {
+    width: 250px;
+    height: 250px;
+  }
 
+  
+
+  .main_content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .main_content h2 {
+    font-size: 2rem;
+    justify-content: center;
+  }
+
+  .main_content p {
+    margin-top: 2rem;
+  }
+
+  .main_btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+}
 
 
 
