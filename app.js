@@ -1,5 +1,6 @@
 
-console.log('Script loaded');
+
+
 
 ////MOBILE NAV BAR
 const menu = document.querySelector('#mobile-menu')
@@ -26,6 +27,7 @@ const highlightMenu = () => {
   
     // adds 'highlight' class to my menu items
     if (window.innerWidth > 960 && scrollPos < 600) {
+      sendScrollNotification();
       homeMenu.classList.add('highlight');
       aboutMenu.classList.remove('highlight');
       return;
@@ -100,7 +102,7 @@ function sendDiscordMessage(message) {
   }
 
   // Din webhook URL
-  const WEBHOOK_URL = "https://discord.com/api/webhooks/...";
+  const WEBHOOK_URL = "https://discord.com/api/webhooks/1170204381573038190/vrFb4wk-g8T5U5sNC5SUSrAk9zXaenZ2YvBAiiys6mytJ98-PlxztS1Nzn92auWQgRhu";
   
   // Använd WEBHOOK_URL i din fetch-anrop
   fetch(WEBHOOK_URL, {
@@ -185,3 +187,44 @@ priserCards.forEach(card => {
         window.open(url, '_blank');
     });
 });
+
+
+
+
+
+
+
+// användar avlyssning 
+// Define the debounce function
+// Define the function that sends the Discord webhook
+
+
+
+// Define the function that sends the Discord webhook
+function sendScrollNotification() {
+  console.log('Sending scroll notification...'); // Log to console for debugging
+  const message = "Någon kollar på din CV Site !";
+  const WEBHOOK_URL = "https://discord.com/api/webhooks/1170204381573038190/vrFb4wk-g8T5U5sNC5SUSrAk9zXaenZ2YvBAiiys6mytJ98-PlxztS1Nzn92auWQgRhu";
+
+  fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          content: message
+      }),
+  })
+  .then(response => {
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      console.log('Scroll event notification sent!');
+  })
+  .catch((error) => {
+      console.error('Error:', error);
+  });
+}
+
+// Add the scroll event listener
+window.addEventListener('scroll', highlightMenu);
