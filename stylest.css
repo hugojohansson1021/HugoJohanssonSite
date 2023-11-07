@@ -257,7 +257,7 @@ background-size: 100%;
   padding: 20px 0; /* Ger lite utrymme ovanför och under bilden */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768) {
     .hero_heading{
         font-size: 60px;
     }
@@ -322,7 +322,6 @@ background-size: 100%;
 .main_content p{
     margin: 1rem 1rem 1rem 1rem;
     font-size: 20px;
-    letter-spacing: 1px;
     
     
 }
@@ -792,11 +791,6 @@ h1 {
 
 }
 
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
 
 
