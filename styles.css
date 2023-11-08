@@ -197,7 +197,7 @@
 .hero{
     background: #5c5c5c;
     background: linear-gradient(to right, #6f6f6f, #000000);
-    padding: 200px 0;
+    padding: 20px 0;
 }
 
 .hero_container{
@@ -265,13 +265,19 @@ background-size: 100%;
     .hero_description{
         font-size: 40px;
     }
+
+    .hero p{
+      margin: 1rem 1rem 1rem 1rem;
+    font-size: 20px;
+    letter-spacing: 1px;
+    }
 }
 
 /*section*/
 
 .main{
     background-color: #131313;
-    padding: 10rem 0;
+    padding: 2rem 0;
 }
 
 .main_container{
@@ -291,6 +297,8 @@ background-size: 100%;
     color: #fff;
     width: 100%;
     margin: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+
 }
 
 .main_content h1{
@@ -506,7 +514,7 @@ background-size: 100%;
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 10rem 0;
+    padding: 3rem 0;
   }
 
   .priser h1{
@@ -682,6 +690,7 @@ background-size: 100%;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
+  justify-content: center;
 }
 
 /* Styles for send button */
@@ -695,6 +704,7 @@ background-size: 100%;
   position: relative;
   transition: all 0.35s;
   outline: none;
+  justify-content: center;
 }
 
 #sendMessage::after {
@@ -706,6 +716,7 @@ background-size: 100%;
   height: 100%;
   transition: all 0.35s;
   border-radius: 4px;
+  justify-content: center;
 }
 
 #sendMessage:hover {
@@ -741,7 +752,8 @@ background-size: 100%;
 .contact-text {
   margin: 1rem;
   text-align: center;
-  max-width: 80%;
+  max-width: 900%;
+  justify-content: center;
 }
 
 /* Styles for h1 */
@@ -774,18 +786,20 @@ h1 {
   h1 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
+    justify-content: center;
   }
 
 
   .contact-link {
-    padding: 4px 8px; /* Minska padding på länkarna för bättre passform på små skärmar */
+    padding: 4px 4px; /* Minska padding på länkarna för bättre passform på små skärmar */
     font-size: 14px; /* Minska textstorleken för länkarna */
+    justify-content: center;
   }
 
   .contact-text {
     font-size: 14px; /* Minska textstorleken */
-    margin: 8px 8px 8px 8px;
-    text-align: center;
+    margin: 1rem;
+    justify-content: center;
   }
 
 
